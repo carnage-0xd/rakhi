@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Rakhi!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #fff5e1, #ffe8ec);
+            font-family: 'Comic Sans MS', cursive;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 2.5rem;
+            color: #d14f4f;
+        }
+
+        img.main-doodle {
+            width: 220px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2rem;
+            padding: 0 30px;
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #ff7f50;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #surprise {
+            margin-top: 30px;
+        }
+
+        #surprise p {
+            font-size: 1.3rem;
+            color: #6a1b9a;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            margin: 30px auto;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+
+        .gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 15px;
+            background-color: #000000;
+            padding: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .gallery-title {
+            font-size: 1.8rem;
+            color: #b0413e;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="Untitled video - Made with Clipchamp (1).m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <h1>Happy Raksha Bandhan 💗✨</h1>
+
+    <img class="main-doodle" src="image.png" alt="Brother and Sister Doodle" />
+    <br>
+    <button onclick="toggleMusic()"> Play 🤧💖 </button>
+
+    <p>
+        You’re not just a friend yaara — you’re the sister I got to choose. <br>
+        Thank you for being there, teasing me and being teased, cheering me up, and making life beautiful. <br>
+        On this Rakhi, I just wanted to say... I’m really lucky to have a sweet si sister like you 🧿💫
+    </p>
+
+    <button onclick="showSurprise()">Click for Surprise 🎁</button>
+
+    <!-- Surprise Section with Message + Scrollable Gallery -->
+    <div id="surprise" class="hidden">
+        <p>
+            A special day for my very special bond 💛<br>
+           Once I called my sister and now you'll always be promised to be your Krishn will always be. It does'nt matter where life takes us I will be always there for you feel free to reach out anytime sissy, I'm not your brother for just school I'm even after. Har raakhi mithai chahiye samjhii?? Or chal gift bhi de dungaa😜 <br>
+            <strong>Happy Rakhi, my dear Sissyyyy (My Chutanki) 😄</strong>
+        </p>
+
+        <div class="gallery-title">Thodi si Tasveere hehe 😁😜(Or nahi milli😭😭) </div>
+        <div class="gallery">
+            <img src="image copy.png" alt="Memory 1" />
+            <img src="image copy 2.png" alt="Memory 2" />
+            <img src="image copy 3.png" alt="Memory 3" />
+            <img src="image copy 4.png" alt="Memory 4" />
+        </div>
+    </div>
+
+    <footer>
+        — Made with love by your annoying bhai 💌
+    </footer>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").classList.remove("hidden");
+        }
+        function toggleMusic() {
+                const music = document.getElementById("bg-music");
+                if (music.paused) {
+                    music.play();
+                } else {
+                    music.pause();
+                }
+            }
+
+            function showSurprise() {
+                document.getElementById("surprise").classList.remove("hidden");
+            }
+    </script>
+</body>
+
+</html>
